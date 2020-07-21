@@ -12,17 +12,17 @@ html {
 }
 
 .body {
-  background: #d18513;
+  background: #6C6473;
 }
 
 .header {
-  background: rgba(144, 50, 61, 0.733);
+  background: #ffffff;
   padding: 17px;
-  margin-bottom: 0px;
   min-height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navigation {
@@ -36,7 +36,7 @@ html {
     display: block;
     margin-left: 40px;
     padding: 15 0px;
-    color: #ffffff;
+    color: #C4CAD0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -69,7 +69,7 @@ html {
 }
 
 .about-me {
-  background: #e4dedf;
+  background: #C4CAD0;
   grid-area: article;
   width: 100%;
   margin-bottom: 40px;
@@ -100,7 +100,7 @@ html {
 }
 
 .frontend-road {
-  background: #e4dedf;
+  background: #C4CAD0;
   margin-bottom: 25px;
   grid-area: section;
   grid-row-start: 7;
@@ -147,16 +147,12 @@ html {
 }
 
 .footer {
-  background: #90323d;
+  background: #ffffff;
   font-family: monospace;
   text-align: center;
-  color: #1c72ac;
   padding: 5px;
-  -moz-box-shadow: inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px #000000;
   &__text {
-    color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -286,16 +282,12 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: rgba(144, 50, 61, 0.733);
     border-radius: 50px;
     padding: 10px;
-    -moz-box-shadow: inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0 0 10px #000000;
     &__link {
         margin-left: 40px;
         padding: 15 0px;
-        color: #ffffff;
+        color: #1b1c1d;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 20px;
         text-decoration: none;
@@ -305,13 +297,14 @@ html {
 
   .main {
     width: 100%;
+    margin: 150px auto 0;
     display: grid;
     grid-template-areas:
       "divfb article sidemenu"
       ". section aside"
       ". section2 .";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 220px 220px 700px;
+    grid-template-rows: 250px 220px 700px;
   }
 
   .quotation {
@@ -334,7 +327,6 @@ html {
 
 
   .about-me {
-    width: 800px;  
     min-height: 300px;
     &__image {
     border-radius: 270px;
