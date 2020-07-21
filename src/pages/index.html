@@ -1,153 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Tomasz Kłos</title>
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+
+  <body class="body">
+    <header class="header" id="top">
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--change" href="index.html"
+          >Strona Główna</a
+        >
+        <a class="navigation__link" href="html.html">HTML</a>
+        <a class="navigation__link" href="css.html">CSS</a>
+        <a class="navigation__link" href="javascript.html">JavaScript</a>
+      </nav>
+      <button class="hamburger hamburger--js">MENU</button>
+    </header>
+    <main class="main">
+      <div class="header-div">
+        <a class="header-div__register" href="register.html"
+          >ZAREJESTRUJ SIĘ</a
+        >
+      </div>
+      <article class="about-me">
+        <p>Od początku dnia minęło: <span class="time--js"></span></p>
+        <img
+          class="about-me__image"
+          src="../assets/img/dred.jpg"
+          alt="Tomasz w dredach"
+        />
+        <h1 class="about-me__header">O mnie..</h1>
+
+        <p class="about-me__description">
+          Cześć, jestem Tomek.Mam 22 lata, a dokładniej kończe za kilka dni.
+          Interesuję się treningiem siłowym, a konkretniej trójbojem siłowym.
+          Lubie też słuchać muzyki jak i czasem coś pograć na gitarze. Jestem
+          początkującym odkrywcą sztuki <i>frontendu.</i><br />
+
+          Jest to mój pierwszy projekt, ale mam nadzieję, że wyjdzie kozacko.
+        </p>
+      </article>
+      <section class="frontend-road">
+        <img
+          class="frontend-road__image"
+          src="../assets/img/znacznik.png"
+          alt="znacznik pinezka"
+        />
+        <h2 class="frontend-road__title">Przebieg kursu tajnej magii</h2>
+        <article class="frontend-road__article frontend-road__article--first">
+          <h3 class="frontend-road__subtitle">Tydzień 1</h3>
+          <p class="frontend-road__description">
+            W pierwszym tygodniu nasz nauczyciel wprowadził nas w struktury tego
+            kursu. Dowiedzieliśmy się, czym jest Frontend i czego musimy się
+            nauczyć, żeby nazwać się Frontdeveloperem. :) Zainstalowaliśmy i
+            zapoznaliśmy się również z narzędziami czyli programami, których
+            będziemy używać. Droga nie jest krótka, wiedzy do nauki też nie
+            mało, ale kto powiedział, że będzie łatwo?
+          </p>
+        </article>
+        <article class="frontend-road__article frontend-road__article--second">
+          <h3 class="frontend-road__subtitle">Tydzień 2</h3>
+          <p class="frontend-road__description">
+            W tym tygodniu nauczyliśmy się podstaw HTML i CSS. Napisaliśmy już
+            troche kodu i dostaliśmy właśnie to zadanie domowe. W tym tygodniu
+            dowiedziałem, się również, że dostałem się na studia informatyczne i
+            to w szkole, która była moim pierwszym wyborem. Pierwsze 2 tygodnie
+            kursu przyswoiłem błyskawicznie. Z niecierpliwością patrzę w
+            przyszłość... :)
+          </p>
+        </article>
+        <article class="frontend-road__article frontend-road__article--third">
+          <h3 class="frontend-road__subtitle">Tydzień 3</h3>
+          <p class="frontend-road__description">
+            W pierwszym tygodniu nasz nauczyciel wprowadził nas w struktury tego
+            kursu. Dowiedzieliśmy się, czym jest Frontend i czego musimy się
+            nauczyć, żeby nazwać się Frontdeveloperem. :) Zainstalowaliśmy i
+            zapoznaliśmy się również z narzędziami czyli programami, których
+            będziemy używać. Droga nie jest krótka, wiedzy do nauki też nie
+            mało, ale kto powiedział, że będzie łatwo?
+          </p>
+          <h4 class="frontend-road--js"></h4>
+        </article>
+      </section>
+      <aside class="quotation">
+        <p class="quotation__text">
+          Wyemancypuj się z mentalnej niewoli, nikt po za Tobą nie może wyzwolić
+          Twojego umysłu!<br>
+          -Bob Marley
+        </p>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        Strona domowa Tomasza Kłos, wszystkie treści są efektem mojego treningu.
+        <a href="#top">Wróć na górę</a>
+      </p>
+    </footer>
   </body>
 </html>

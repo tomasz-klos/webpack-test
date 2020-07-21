@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestracja</title>
+  </head>
+  <body class="body">
+    <header class="header" id="top">
+        <nav class="navigation">
+          <a class="navigation__link" href="index.html">Strona Główna</a>
+          <a class="navigation__link" href="html.html">HTML</a>
+          <a class="navigation__link" href="css.html">CSS</a>
+          <a class="navigation__link" href="javascript.html">JavaScript</a>
+        </nav>
+      </header>
+    <main class="main">
+      <div class="div-fb">
+        <a href="https://www.facebook.com/profile.php?id=100002902463490">
+          <img src="../assets/img/fb.png" alt="ikonka facebook"
+        /></a>
+      </div>
+      <form class="form" method="POST" action="https://dev.cotenfrontend.pl">
+          <img class="form__picture" src="../assets/img/kurs.png" alt="ikonka ludzika">
+          <h1 class="form__title">Stwórz konto</h1>
+        <p>
+          <label class="form__label" for="userName">Nazwa Użytkownika:</label>
+          <input
+            class="form__input"
+            id="userName"
+            placeholder="Wpisz swoją nazwę"
+            name="userName"
+          />
+        </p>
+        <p>
+          <label class="form__label" for="password">Hasło:</label>
+          <input
+            class="form__input"
+            type="password"
+            id="password"
+            placeholder="Wpisz swoje hasło"
+            name="password"
+          />
+        </p>
+        <p>
+            <label class="form__label" for="password">Potwierdź hasło:</label>
+            <input
+              class="form__input"
+              type="password"
+              id="password"
+              placeholder="Potwierdź swoje hasło"
+              name="password"
+            />
+          </p>
+        <p>
+          <label class="form__label" for="phoneNumber">Numer telefonu:</label>
+          <input
+            class="form__input"
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder='Wpisz swój numer telefonu'
+          />
+        </p>
+        <p>
+            <label class="form__label" for="email">Adres e-mail:</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" Wpisz swój adres email"
+            />
+          </p>
+          <p>
+              <label class="form__label" for="band">Płeć:</label>
+              <select name="band" id="band">
+                  <option value="band-1">Mężczyzna</option>
+                  <option value="band-2">Kobieta</option>
+              </select>
+          </p>
+          <p>
+              <label class="form__label" for="aboutYou">Napisz coś o sobie</label>
+              <textarea class="label__textarea" id="abotYou" name="aboutYou">Napisz coś o sobie</textarea>
+          </p>
+          <p>
+              <fieldset>
+                  <legend class="form__label">Weryfikacja</legend>
+                  <label for="verification">
+                  <input 
+                  type="radio"
+                  id="verification"
+                  name="verification"
+                >Nie jestem robotem</label>
+              </fieldset>
+          </p>
+          <p>
+              <input type="submit" id="send" name="send"/>
+          </p>
+      </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">
+          Strona domowa Tomasza Kłos, wszystkie treści są efektem mojego treningu.
+        </p>
+      </footer>
+  </body>
+</html>
