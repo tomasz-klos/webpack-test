@@ -1,8 +1,7 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://cdn.pixabay.com/photo/2016/02/08/11/24/homepage-1186348_960_720.jpg)
 
-# WTF Webpack Starter Kit 
-
-Simple toolkit for your static websites development.
+# My first homepage
+This is my first home page. I'm learning in page new skills and just having fun.
 
 ## How to use it?
 
